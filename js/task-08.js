@@ -15,6 +15,7 @@ function handleSubmit(event) {
         return;
     }
 
-    console.log(`Пошта: ${email.value}, Пароль: ${password.value}`);
+    console.log({ email: email.value, password: password.value});
+    // console.log(`Пошта: ${email.value}, Пароль: ${password.value}`);
     event.currentTarget.reset();
 }
