@@ -28,10 +28,11 @@ function createBoxes(amount) {
   boxes.push(box);
 }
   container.append(...boxes);
-  inputNum.value = '';
 }
 
 btnDestroy.addEventListener('click', destroyBoxes);
 function destroyBoxes() {
   container.innerHTML = '';
+  inputNum.value = '';
+  inputNum.removeAttribute('amount');
 }
